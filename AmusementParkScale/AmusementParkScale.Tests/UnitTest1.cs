@@ -105,6 +105,15 @@ public class TestsPerson
         
 
     }
+    [TestFixture]
+    public class TestsDecisionBasedOnweight
+    {
+        [Test]
+        public void Test1_1_IsThereADecision() 
+        {
+            DecisionBasedOnweight decision = new DecisionBasedOnweight();
+        }
+    }
 
 
 }

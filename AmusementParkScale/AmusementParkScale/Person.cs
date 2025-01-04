@@ -14,7 +14,15 @@ namespace AmusementParkScale
         {
         
         }
-        
+        public Person(double weight)
+        {
+            this.weight = weight;
+        }
+
+        public Person(string weight)
+        {
+            this.weight = Convert.ToDouble(weight);
+        }
 
         public double Weigh(Person person) 
         {
