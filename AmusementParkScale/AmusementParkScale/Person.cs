@@ -8,15 +8,18 @@ namespace AmusementParkScale
 {
     public class Person
     {
-        public string weight;
+        public double weight;
 
         public Person() 
         {
         
         }
+        
 
-        public string Weigh(Person person) 
+        public double Weigh(Person person) 
         {
+            
+            
             return person.weight;
         }
 
