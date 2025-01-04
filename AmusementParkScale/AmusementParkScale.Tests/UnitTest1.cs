@@ -90,9 +90,9 @@ public class TestsPerson
         double weight = newPerson.Object.Weigh();
 
         //compare with wrong value
-        Assert.That(weight, Is.Not.EqualTo(notWeight));
+        Assert.That(newPerson.Object.weight, Is.Not.EqualTo(notWeight));
         //compare with value from weighing
-        Assert.That(weight, Is.EqualTo(weight));
+        Assert.That(newPerson.Object.weight, Is.EqualTo(weight));
 
     }
 
