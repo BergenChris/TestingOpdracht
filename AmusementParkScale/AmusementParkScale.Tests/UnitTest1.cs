@@ -35,17 +35,17 @@ public class TestsScreen
     [Test]
     public void Test1_4_ColorMatchesText()
     {
-        var newScreen = new Screen("allowed");
-        newScreen.Work(newScreen);
+        var newScreen = new Screen();
+        newScreen.Work("allowed");
         Assert.That(newScreen.color, Is.EqualTo(ConsoleColor.Green));
-        newScreen.text = "not allowed";
-        newScreen.Work(newScreen);
+     
+        newScreen.Work("not allowed");
         Assert.That(newScreen.color, Is.EqualTo(ConsoleColor.Red));
-        newScreen.text = "jibberish";
-        newScreen.Work(newScreen);
+  
+        newScreen.Work("testing");
         Assert.That(newScreen.color, Is.EqualTo(ConsoleColor.Red));
-        newScreen.text = null;
-        newScreen.Work(newScreen);
+
+        newScreen.Work(null);
         Assert.That(newScreen.color, Is.EqualTo(ConsoleColor.Red));
     }
 

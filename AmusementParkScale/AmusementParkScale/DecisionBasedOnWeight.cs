@@ -21,5 +21,11 @@ namespace AmusementParkScale
         {
             this.person = person;
         }
+
+        public void Conditions(double min,double max) 
+        {
+            this.minWeight = min;
+            this.maxWeight = max;
+        }
     }
 }

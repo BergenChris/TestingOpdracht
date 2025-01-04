@@ -22,15 +22,16 @@ namespace AmusementParkScale
             this.color = color;
         }
 
-        public void Work(Screen screen) 
+        public void Work(string? text) 
         {
-            if (screen.text == "allowed")
+            this.text = text;
+            if (text == "allowed")
             {
-                screen.color = ConsoleColor.Green;
+                this.color = ConsoleColor.Green;
             }
             else 
             {
-                screen.color = ConsoleColor.Red;
+                this.color = ConsoleColor.Red;
             }
 
         }
