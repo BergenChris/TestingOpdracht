@@ -9,11 +9,13 @@ namespace AmusementParkScale
     public class Screen
     {
         public string text;
+        public ConsoleColor color;
  
         public Screen() { }
-        public Screen(string text)
+        public Screen(string text,ConsoleColor color)
         {
             this.text = text;
+            this.color = color;
         }
     }
 }
