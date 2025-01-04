@@ -13,10 +13,6 @@
     <PackageReference Include="NUnit" Version="4.3.2" />
     <PackageReference Include="NUnit3TestAdapter" Version="4.6.0" />
     <PackageReference Include="SpecFlow" Version="3.9.74" />
-<<<<<<< HEAD
-    <PackageReference Include="SpecFlow.NUnit" Version="3.9.74" />
-=======
->>>>>>> 7126c3cb91bc531c89d74ceb1f807fb398b40aff
   </ItemGroup>
 
 </Project>
