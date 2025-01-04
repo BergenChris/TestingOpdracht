@@ -77,7 +77,20 @@ public class TestsPerson
         newPerson.weight = "0";
         string weight= newPerson.Weigh(newPerson);
         Assert.That(newPerson.weight,Is.EqualTo(weight));
+    }
 
+    [Test]
+    public void Test2_4_WeighEqualToWeight() 
+    {
+        var newPerson = new Person();
+        newPerson.weight = "0";
+        string notWeight = "1";
+        string weight = newPerson.Weigh(newPerson);
+
+        //compare with wrong value
+        Assert.That(newPerson.weight, Is.Not.EqualTo(notWeight));
+        //compare with value from weighing
+        Assert.That(newPerson.weight, Is.EqualTo(weight));
 
     }
 
