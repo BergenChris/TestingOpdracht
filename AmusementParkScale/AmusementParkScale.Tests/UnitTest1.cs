@@ -117,8 +117,8 @@ public class TestsDecisionBasedOnWeight
     }
 
     [Test]
-    public void Test3_2_CanItMakeADecisionAboutAPerson()
+    public void Test3_2_CanItAcceptAPerson()
     {
-        DecisionBasedOnWeight decision = new DecisionBasedOnWeight(new Person(80.5));
+        DecisionBasedOnWeight decision = new DecisionBasedOnWeight(new Person());
     }
 }

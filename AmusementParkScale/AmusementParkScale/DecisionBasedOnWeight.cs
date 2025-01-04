@@ -8,6 +8,16 @@ namespace AmusementParkScale
 {
     public class DecisionBasedOnWeight
     {
-       
+        Person person = new Person();
+
+
+        public DecisionBasedOnWeight() 
+        {
+        
+        }
+        public DecisionBasedOnWeight(Person person)
+        {
+            this.person = person;
+        }
     }
 }
