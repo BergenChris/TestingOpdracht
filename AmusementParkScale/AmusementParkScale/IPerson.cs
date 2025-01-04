@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace AmusementParkScale
 {
-    internal interface IPerson
+    public interface IPerson
     {
+        double weight { get; set; }
+        double Weigh();
     }
 }

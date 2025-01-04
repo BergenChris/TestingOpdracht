@@ -1,5 +1,6 @@
 namespace AmusementParkScale.Tests;
 using NUnit.Framework;
+using Moq;
 
 
 
@@ -73,24 +74,25 @@ public class TestsPerson
     [Test]
     public void Test2_3_CanYouWeighAPerson()
     {
-        var newPerson = new Person();
-        newPerson.weight = 0;
-        double weight= newPerson.Weigh(newPerson);
-        Assert.That(newPerson.weight,Is.EqualTo(weight));
+        int setWeight = 80;
+        var newPerson = new Mock<IPerson>();
+        newPerson.Setup(p => p.Weigh()).Returns(setWeight);
+        double weight= newPerson.Object.Weigh();
+        Assert.That(weight,Is.EqualTo(setWeight));
     }
 
     [Test]
     public void Test2_4_WeighEqualToWeight() 
     {
-        var newPerson = new Person();
-        newPerson.weight = 0;
+        var newPerson = new Mock<IPerson>();
+        newPerson.Setup(p=>p.Weigh()).Returns(0);
         double notWeight = 1;
-        double weight = newPerson.Weigh(newPerson);
+        double weight = newPerson.Object.Weigh();
 
         //compare with wrong value
-        Assert.That(newPerson.weight, Is.Not.EqualTo(notWeight));
+        Assert.That(weight, Is.Not.EqualTo(notWeight));
         //compare with value from weighing
-        Assert.That(newPerson.weight, Is.EqualTo(weight));
+        Assert.That(weight, Is.EqualTo(weight));
 
     }
 
