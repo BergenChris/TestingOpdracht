@@ -2,7 +2,7 @@ namespace AmusementParkScale.Tests;
 using NUnit.Framework;
 
 
-[TestFixture]
+
 public class TestsScreen
 {
    
@@ -52,7 +52,7 @@ public class TestsScreen
 
 }
 
-[TestFixture]
+
 public class TestsPerson 
 {
     [Test]
@@ -107,7 +107,7 @@ public class TestsPerson
     }
 }
 
-[TestFixture]
+
 public class TestsDecisionBasedOnWeight
 {
     [Test]
@@ -147,5 +147,11 @@ public class TestsDecisionBasedOnWeight
 
     }
 
+
+}
+
+
+public class TestsEnter
+{ 
 
 }
