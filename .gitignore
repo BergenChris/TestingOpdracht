@@ -1,0 +1,13 @@
+.vs/
+.vscode/
+.idea/
+
+**/[Dd]ebug/
+[Dd]ebugPublic/
+[Dd]ist/
+[Dd]istros/
+[Dd]ebug/ or /bin/ or /obj/
+bin/
+obj/
+**/bin/
+**/obj/
