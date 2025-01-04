@@ -4,7 +4,7 @@ using Moq;
 
 
 
-public class ScreenTests
+public class TestsScreen
 {
    
 
