@@ -3,17 +3,19 @@ using NUnit.Framework;
 
 
 [TestFixture]
-public class Tests
+public class TestsScreen
 {
    
 
     [Test]
+   
     public void Test1_1_IsThereAScreen()
     {
         var newScreen = new Screen();
     }
 
     [Test]
+ 
     public void Test1_2_TextOnScreen()
     {
         var newScreen = new Screen();
@@ -22,6 +24,7 @@ public class Tests
     }
 
     [Test]
+  
     public void Test1_3_ColoronScreen()
     {
         var newScreen = new Screen();
@@ -44,7 +47,18 @@ public class Tests
         newScreen.text = null;
         newScreen.Work(newScreen);
         Assert.That(newScreen.color, Is.EqualTo(ConsoleColor.Red));
+    }
 
 
+}
+
+[TestFixture]
+public class TestsPerson 
+{
+    [Test]
+
+    public void Test1_1_IsThereAScreen()
+    {
+        var newPerson = new Person();
     }
 }

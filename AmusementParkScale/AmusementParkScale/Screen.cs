@@ -8,8 +8,8 @@ namespace AmusementParkScale
 {
     public class Screen
     {
-        public string text;
-        public ConsoleColor color;
+        public string? text;
+        public ConsoleColor? color;
  
         public Screen() { }
         public Screen(string text)
