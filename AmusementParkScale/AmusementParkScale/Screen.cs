@@ -8,8 +8,10 @@ namespace AmusementParkScale
 {
     public class Screen
     {
-        public string? text;
-        public ConsoleColor? color;
+        public string text = "";
+        public ConsoleColor color = ConsoleColor.Black;
+
+     
  
         public Screen() { }
         public Screen(string text)
@@ -22,16 +24,22 @@ namespace AmusementParkScale
             this.color = color;
         }
 
-        public void Work(string? text) 
+        public void Work(string text) 
         {
             this.text = text;
             if (text == "allowed")
             {
                 this.color = ConsoleColor.Green;
+                Console.ForegroundColor = this.color;
+                Console.WriteLine(text);
+                Console.ResetColor();
             }
             else 
             {
                 this.color = ConsoleColor.Red;
+                Console.ForegroundColor = this.color;
+                Console.WriteLine(text);
+                Console.ResetColor();
             }
 
         }

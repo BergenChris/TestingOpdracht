@@ -135,8 +135,8 @@ public class TestsDecisionBasedOnWeight
     public void Test3_4_GetConditions()
     {
         DecisionBasedOnWeight decision = new DecisionBasedOnWeight();
-        Assert.That(decision.minWeight, Is.EqualTo(80));
-        Assert.That(decision.maxWeight, Is.EqualTo(120));
+        Assert.That(decision.minWeight, Is.EqualTo(60));
+        Assert.That(decision.maxWeight, Is.EqualTo(100));
     }
 
     [Test]
