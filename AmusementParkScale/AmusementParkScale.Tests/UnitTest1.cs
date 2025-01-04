@@ -121,4 +121,22 @@ public class TestsDecisionBasedOnWeight
     {
         DecisionBasedOnWeight decision = new DecisionBasedOnWeight(new Person());
     }
+
+    [Test]
+    public void Test3_3_ExtractWeightFromPersonWithParams()
+    {
+        DecisionBasedOnWeight decision1 = new DecisionBasedOnWeight(new Person(80.5));
+        Assert.That(decision1.person.weight, Is.EqualTo(80.5));
+    }
+
+    [Test]
+    public void Test3_4_GetConditions()
+    {
+        DecisionBasedOnWeight decision = new DecisionBasedOnWeight();
+        decision.minWeight = 80;
+        decision.maxWeight = 120;
+
+        Assert.That(decision.minWeight, Is.EqualTo(80));
+        Assert.That(decision.maxWeight, Is.EqualTo(120));
+    }
 }

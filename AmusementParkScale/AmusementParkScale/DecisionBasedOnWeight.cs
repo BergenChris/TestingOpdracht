@@ -8,7 +8,9 @@ namespace AmusementParkScale
 {
     public class DecisionBasedOnWeight
     {
-        Person person = new Person();
+        public Person person = new Person();
+        public double minWeight;
+        public double maxWeight;
 
 
         public DecisionBasedOnWeight() 
