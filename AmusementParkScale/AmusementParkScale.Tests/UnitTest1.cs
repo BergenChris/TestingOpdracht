@@ -152,6 +152,10 @@ public class TestsDecisionBasedOnWeight
 
 
 public class TestsEnter
-{ 
-
+{
+    [Test]
+    public void Test4_1_CanICallEnter() 
+    {
+        Enter enter = new Enter();
+    }
 }
