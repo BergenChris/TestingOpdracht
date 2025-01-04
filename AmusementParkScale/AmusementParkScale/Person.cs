@@ -37,7 +37,8 @@ namespace AmusementParkScale
                 var httpRespone = httpClient.GetAsync(Url).GetAwaiter().GetResult();
                 var response = httpRespone.Content.ReadAsStringAsync().GetAwaiter().GetResult();
                 Console.WriteLine(JsonConvert.DeserializeObject<Person>(response)!.weight);
-                return JsonConvert.DeserializeObject<Person>(response)!.weight;
+                this.weight = JsonConvert.DeserializeObject<Person>(response)!.weight;
+                return weight;
                 
             }
             

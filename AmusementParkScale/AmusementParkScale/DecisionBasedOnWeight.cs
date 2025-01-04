@@ -9,8 +9,8 @@ namespace AmusementParkScale
     public class DecisionBasedOnWeight
     {
         public Person person = new Person();
-        public double minWeight = 80;
-        public double maxWeight = 120;
+        public double minWeight = 60;
+        public double maxWeight = 100;
 
 
         public DecisionBasedOnWeight() 
@@ -21,6 +21,8 @@ namespace AmusementParkScale
         {
             this.person = person;
         }
+        
+  
 
         public void Conditions(double min,double max) 
         {

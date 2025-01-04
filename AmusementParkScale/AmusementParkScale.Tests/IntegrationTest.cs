@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NUnit;
 
 namespace AmusementParkScale.Tests
 {
@@ -10,7 +11,7 @@ namespace AmusementParkScale.Tests
     {
 
         private const double weight = 63.16;
-        private const string MockoonUrl = "https://dummyjson.com/users/1";
+        private const string MockoonUrl = "http://localhost:3001/users/1";
 
         [Test]
         public void WeighFromAPI() 
