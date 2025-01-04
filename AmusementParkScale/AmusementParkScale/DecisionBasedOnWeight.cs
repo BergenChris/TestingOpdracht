@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace AmusementParkScale
 {
-    internal class DecisionBasedOnWeight
+    public class DecisionBasedOnWeight
     {
+       
     }
 }

@@ -105,15 +105,20 @@ public class TestsPerson
         
 
     }
-    [TestFixture]
-    public class TestsDecisionBasedOnweight
+}
+
+[TestFixture]
+public class TestsDecisionBasedOnWeight
+{
+    [Test]
+    public void Test3_1_IsThereADecision()
     {
-        [Test]
-        public void Test1_1_IsThereADecision() 
-        {
-            DecisionBasedOnweight decision = new DecisionBasedOnweight();
-        }
+        DecisionBasedOnWeight decision = new DecisionBasedOnWeight();
     }
 
-
+    [Test]
+    public void Test3_2_CanItMakeADecisionAboutAPerson()
+    {
+        DecisionBasedOnWeight decision = new DecisionBasedOnWeight(new Person(80.5));
+    }
 }
