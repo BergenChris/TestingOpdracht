@@ -28,4 +28,18 @@ public class Tests
         newScreen.color = ConsoleColor.Red;
         Assert.That(newScreen.color, Is.EqualTo(ConsoleColor.Red));
     }
+
+    [Test]
+    public void Test1_4_ColorMatchesText()
+    {
+        var newScreen = new Screen();
+        newScreen.text = "allowed";
+        Assert.That(newScreen.color, Is.EqualTo(ConsoleColor.Green));
+        newScreen.text = "not allowed";
+        Assert.That(newScreen.color, Is.EqualTo(ConsoleColor.Red));
+        newScreen.text = "jibberish";
+        Assert.That(newScreen.color, Is.EqualTo(ConsoleColor.Red));
+
+
+    }
 }
