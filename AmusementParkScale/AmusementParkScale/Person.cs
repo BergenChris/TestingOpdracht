@@ -8,7 +8,7 @@ namespace AmusementParkScale
 {
     public class Person
     {
-
+        public string weight;
 
         public Person() 
         {

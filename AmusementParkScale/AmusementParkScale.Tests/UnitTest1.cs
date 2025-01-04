@@ -62,11 +62,12 @@ public class TestsPerson
         var newPerson = new Person();
     }
 
+    [Test]
     public void Test2_2_DoesThePersonHaveParameterWeight()
     {
         var newPerson = new Person();
-        newPerson.weight = 0;
-        Assert.That(newPerson.weight.toString(), Does.Contain("0"));
+        newPerson.weight = "0";
+        Assert.That(newPerson.weight, Does.Contain("0"));
 
     }
 
