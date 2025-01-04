@@ -15,6 +15,11 @@ namespace AmusementParkScale
         
         }
 
+        public string Weigh(Person person) 
+        {
+            return person.weight;
+        }
+
 
     }
 }

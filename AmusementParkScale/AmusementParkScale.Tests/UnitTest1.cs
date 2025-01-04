@@ -68,6 +68,16 @@ public class TestsPerson
         var newPerson = new Person();
         newPerson.weight = "0";
         Assert.That(newPerson.weight, Does.Contain("0"));
+    }
+
+    [Test]
+    public void Test2_3_CanYouWeighAPerson()
+    {
+        var newPerson = new Person();
+        newPerson.weight = "0";
+        string weight= newPerson.Weigh(newPerson);
+        Assert.That(newPerson.weight,Is.EqualTo(weight));
+
 
     }
 
