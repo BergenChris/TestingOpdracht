@@ -27,5 +27,11 @@ namespace AmusementParkScale
             this.minWeight = min;
             this.maxWeight = max;
         }
+        public bool Work() 
+        {
+            if (person.weight < minWeight) { return false; }
+            else if (person.weight > maxWeight) { return false; }
+            else { return true; }
+        }
     }
 }

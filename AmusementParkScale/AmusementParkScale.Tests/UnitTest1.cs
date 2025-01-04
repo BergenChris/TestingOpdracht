@@ -162,6 +162,15 @@ public class TestsEnter
     [Test]
     public void Test4_2_CanICallEnterWithParams() 
     {
-        Enter enter = new Enter(int fails, int maxfails, Person person);
+        Enter enter = new Enter(0,3,new DecisionBasedOnWeight( new Person(80)));
+    }
+
+    [Test]
+    public void Test4_3_DoesEnterWork() 
+    {
+        Enter enter = new Enter(0, 3, new DecisionBasedOnWeight( new Person(80)));
+        Assert.That(enter.Work(), Is.True);
+        enter.decision =  new DecisionBasedOnWeight( new Person(130) );
+        Assert.That(enter.Work(), Is.False);
     }
 }
