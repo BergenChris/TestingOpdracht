@@ -158,4 +158,10 @@ public class TestsEnter
     {
         Enter enter = new Enter();
     }
+
+    [Test]
+    public void Test4_2_CanICallEnterWithParams() 
+    {
+        Enter enter = new Enter(int fails, int maxfails, Person person);
+    }
 }
