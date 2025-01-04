@@ -23,7 +23,7 @@ namespace AmusementParkScale
         public bool Work() 
         {
             
-            if (fails < maxFails && decision.Work())
+            if (this.fails < this.maxFails && this.decision.Work())
             {
                 return true;
             }

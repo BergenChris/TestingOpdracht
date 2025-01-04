@@ -3,7 +3,7 @@ using NUnit.Framework;
 
 
 
-public class TestsScreen
+public class ScreenTests
 {
    
 
@@ -172,5 +172,14 @@ public class TestsEnter
         Assert.That(enter.Work(), Is.True);
         enter.decision =  new DecisionBasedOnWeight( new Person(130) );
         Assert.That(enter.Work(), Is.False);
+    }
+
+    [Test]
+    public void Test4_4_TooManyFailsNoEntry()
+    {
+        Enter enter = new Enter(3, 3, new DecisionBasedOnWeight(new Person(80)));
+        Assert.That(enter.Work(), Is.False);
+        Enter enter1 = new Enter(0, 0, new DecisionBasedOnWeight(new Person(80)));
+        Assert.That(enter1.Work(), Is.False);
     }
 }
