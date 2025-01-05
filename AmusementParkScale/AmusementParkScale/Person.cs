@@ -13,7 +13,9 @@ namespace AmusementParkScale
     {
         public double weight { get; set; }
 
-        public string Url { get; set; } = "https://dummyjson.com/users/1";
+        public string firstName { get; set; }
+
+        public string Url { get; set; } = "https://dummyjson.com/users/";
       
 
         public Person() 
@@ -30,14 +32,14 @@ namespace AmusementParkScale
             this.weight = Convert.ToDouble(weight);
         }
 
-        public double Weigh() 
+        public double Weigh(string userId) 
         {
             using (var httpClient = new HttpClient())
             {
-                var httpRespone = httpClient.GetAsync(Url).GetAwaiter().GetResult();
+                var httpRespone = httpClient.GetAsync(Url+userId).GetAwaiter().GetResult();
                 var response = httpRespone.Content.ReadAsStringAsync().GetAwaiter().GetResult();
-                Console.WriteLine(JsonConvert.DeserializeObject<Person>(response)!.weight);
                 this.weight = JsonConvert.DeserializeObject<Person>(response)!.weight;
+                this.firstName = JsonConvert.DeserializeObject<Person>(response)!.firstName;
                 return weight;
                 
             }

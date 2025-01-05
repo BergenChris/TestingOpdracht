@@ -9,6 +9,6 @@ namespace AmusementParkScale
     public interface IPerson
     {
         double weight { get; set; }
-        double Weigh();
+        double Weigh(string userId);
     }
 }

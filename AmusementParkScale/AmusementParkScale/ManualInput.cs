@@ -56,11 +56,11 @@ namespace AmusementParkScale
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine("Error");
+                    fails++;
+                    Console.WriteLine("Error nr: "+fails);
                     Console.WriteLine("-----");
                     Console.WriteLine(e.Message);
                     Console.WriteLine();
-                    fails++;
                 }
             }
         }

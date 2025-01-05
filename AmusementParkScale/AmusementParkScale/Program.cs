@@ -23,19 +23,24 @@ namespace AmusementParkScale
                         ManualInput.ManualInputMethod();
                         break;
                     case "2":
-                        var person = new Person();
-                        person.Weigh();
-                        Console.WriteLine("person from API = " + person.weight + "kg.");
-                        Enter enter = new Enter(0,3, new DecisionBasedOnWeight(person));
-                        Screen screen = new Screen();
-                        if (enter.Work())
+
+                        for (int i = 1 ;i<=30;i++) 
                         {
-                            screen.Work("allowed");
+                            var person = new Person();
+                            person.Weigh(Convert.ToString(i));
+                            Console.WriteLine(person.firstName+" from API = " + person.weight + "kg.");
+                            Enter enter = new Enter(0, 3, new DecisionBasedOnWeight(person));
+                            Screen screen = new Screen();
+                            if (enter.Work())
+                            {
+                                screen.Work("allowed");
+                            }
+                            else
+                            {
+                                screen.Work("NOT ALLOWED");
+                            }
                         }
-                        else
-                        {
-                            screen.Work("NOT ALLOWED");
-                        }
+                        
 
                         break;
                     case "X":
