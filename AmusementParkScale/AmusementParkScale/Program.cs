@@ -1,9 +1,10 @@
-﻿
+﻿using NLog;
 
 namespace AmusementParkScale
 {
     internal class Program
     {
+        private static readonly Logger logger = LogManager.GetCurrentClassLogger();
         static void Main(string[] args)
         {
             string input;
@@ -14,6 +15,7 @@ namespace AmusementParkScale
                 Console.WriteLine("2.API");
                 Console.WriteLine("X. Exit");
                 input = Console.ReadLine();
+                logger.Info("User selected" + input);
                 switch (input)
                 {
                     case "1":
