@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmusementParkScale", "Amuse
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmusementParkScaleUnitTests.Tests", "AmusementParkScale.Tests\AmusementParkScaleUnitTests.Tests.csproj", "{4B803CE8-1DE1-4BDA-8187-B533EF21209C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmusementParkScaleIntegrationTests.Test", "AmusementParkScaleIntegrationTests.Test\AmusementParkScaleIntegrationTests.Test.csproj", "{59B0A04C-5330-4AB6-9EC3-29F82E7CC5E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmusementParkScaleIntegrationTests.Test", "AmusementParkScaleIntegrationTests.Test\AmusementParkScaleIntegrationTests.Test.csproj", "{59B0A04C-5330-4AB6-9EC3-29F82E7CC5E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmusementParkScaleFeatureTests.Test", "AmusementParkScaleFeatureTests.Test\AmusementParkScaleFeatureTests.Test.csproj", "{EFC38FC8-3E8A-4115-A6C2-C0A26108BC52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmusementParkScaleFeatureTests.Test", "AmusementParkScaleFeatureTests.Test\AmusementParkScaleFeatureTests.Test.csproj", "{EFC38FC8-3E8A-4115-A6C2-C0A26108BC52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmusementParkScaleSpecflower.Specs", "AmusementParkScaleSpecflower.Specs\AmusementParkScaleSpecflower.Specs.csproj", "{9A87CF4F-554B-4395-9877-7F44E85EBF35}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{EFC38FC8-3E8A-4115-A6C2-C0A26108BC52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFC38FC8-3E8A-4115-A6C2-C0A26108BC52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFC38FC8-3E8A-4115-A6C2-C0A26108BC52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A87CF4F-554B-4395-9877-7F44E85EBF35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A87CF4F-554B-4395-9877-7F44E85EBF35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A87CF4F-554B-4395-9877-7F44E85EBF35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A87CF4F-554B-4395-9877-7F44E85EBF35}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
